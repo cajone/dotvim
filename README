@@ -16,3 +16,8 @@ ln -s ~/.vim/vimrc ~/.vimrc
 
 cd ~/.vim
 git clone https://github.com/cajone/dotvim.git
+
+
+Once this is done we need to download all the bundles defined as git submodules:
+
+git submodule update --init
