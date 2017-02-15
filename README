@@ -1,0 +1,16 @@
+This repo is based on Drew Neil's Vimcasts episode #27
+
+http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+
+Note: the following commands maybe distructive to your existing vim setup make sure and move your
+~/.vim and ~/.vimrc out of the way eg:
+
+mv ~/.vim ~/.vim_bak
+mv ~/.vimrc ~/.vimrc_bak
+
+Once done then :
+
+mkdir ~/.vim
+touch ~/.vim/vimrc
+ln -s ~/.vim/vimrc ~/.vimrc
+
