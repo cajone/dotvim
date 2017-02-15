@@ -63,11 +63,31 @@
 	set scrolljump=5                " Lines to scroll when cursor leaves screen
 	set scrolloff=3                 " Minimum lines to keep above and below cursor
 	set foldenable                  " Auto fold code
-"	set list 								" set nolist hide/show hidden chars eg ^I
-	set tabstop=3 						  " Tab indentation size
+"	set list 						" set nolist hide/show hidden chars eg ^I
 	set relativenumber
 "	set spell!
 
-" Leader mapping
+" Formatting {
 
-"   let mapleader = '\'
+    set nowrap                      " Do not wrap long lines
+    set autoindent                  " Indent at the same level of the previous line
+    set shiftwidth=4                " Use indents of 4 spaces
+    set expandtab                   " Tabs are spaces, not tabs
+    set tabstop=4                   " An indentation every four columns
+    set softtabstop=4               " Let backspace delete indent
+    set nojoinspaces                " Prevents inserting two spaces after punctuation on a join (J)
+    set splitright                  " Puts new vsplit windows to the right of the current
+    set splitbelow                  " Puts new split windows to the bottom of the current
+ 
+" Key Mappings
+
+    " Some helpers to edit mode
+    " http://vimcasts.org/e/14
+    "   let mapleader = '\'
+    cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
+    map <leader>ew :e %%
+    map <leader>es :sp %%
+    map <leader>ev :vsp %%
+    map <leader>et :tabe %%
+
+
