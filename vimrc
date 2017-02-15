@@ -41,11 +41,6 @@
 
 " }
 
-
-"  Airline Theme
-	let g:airline_theme='kolor'
-	set laststatus=2 					  " Get instant feeback from airline
-
 " Environment Settings
 
 	set backspace=indent,eol,start  " Backspace for dummies
@@ -90,4 +85,12 @@
     map <leader>ev :vsp %%
     map <leader>et :tabe %%
 
+" Plugin Key Mappings
+    " Airline Theme
+        let g:airline_theme='kolor'
+        set laststatus=2 					  " Get instant feeback from airline
+
+    " Ctrlp
+        let g:ctrlp_map = '<c-p>'
+        let g:ctrlp_cmd = 'CtrlP'
 
