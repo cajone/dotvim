@@ -4,7 +4,8 @@
 	syntax on
 	filetype plugin indent on
 
-	call pathogen#helptags()
+"  Airline Theme
+	let g:airline_theme='kolor'
 
 " Environment Settings
 

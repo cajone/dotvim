@@ -7,3 +7,6 @@
 [submodule "bundle/pathogen"]
 	path = bundle/pathogen
 	url = https://github.com/tpope/vim-pathogen.git
+[submodule "/home/pete/.vim/bundle/airline-themes"]
+	path = /home/pete/.vim/bundle/airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
