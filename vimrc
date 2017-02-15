@@ -6,6 +6,7 @@
 
 "  Airline Theme
 	let g:airline_theme='kolor'
+	set laststatus=2 					  " Get instant feeback from airline
 
 " Environment Settings
 
