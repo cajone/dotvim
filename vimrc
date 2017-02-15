@@ -59,8 +59,8 @@
 	set scrolloff=3                 " Minimum lines to keep above and below cursor
 	set foldenable                  " Auto fold code
 "	set list 						" set nolist hide/show hidden chars eg ^I
-	set relativenumber
-"	set spell!
+	set relativenumber              " Sets the linenumbers to be relative to the current line
+	set nospell                     " Turn Spell checking off
 
 " Formatting {
 
@@ -84,6 +84,12 @@
     map <leader>es :sp %%
     map <leader>ev :vsp %%
     map <leader>et :tabe %%
+
+    " Jumping between windows replacement for Ctrl-w[hjkl]
+    nnoremap <C-h> <C-w>h
+    nnoremap <C-j> <C-w>j
+    nnoremap <C-k> <C-w>k
+    nnoremap <C-l> <C-w>l
 
 " Plugin Key Mappings
     " Airline Theme
