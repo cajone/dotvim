@@ -11,12 +11,11 @@ mv ~/.vimrc ~/.vimrc_bak
 Once done then :
 
 mkdir ~/.vim
-touch ~/.vim/vimrc
-ln -s ~/.vim/vimrc ~/.vimrc
-
 cd ~/.vim
 git clone https://github.com/cajone/dotvim.git . ( Note the trailing dot is important but will only work if .vim is empty )
 
+
+ln -s ~/.vim/vimrc ~./vimrc
 
 Once this is done we need to download all the bundles defined as git submodules:
 

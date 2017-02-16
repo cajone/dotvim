@@ -1,9 +1,3 @@
-" First the important part Pathogen !
-	runtime bundle/pathogen/autoload/pathogen.vim
-	execute pathogen#infect()
-	syntax on
-	filetype plugin indent on
-
 " Environment {
 
 	" Identify platform {
@@ -41,6 +35,13 @@
 
 " }
 
+" First the important part Pathogen !
+	runtime bundle/pathogen/autoload/pathogen.vim
+	execute pathogen#infect()
+	syntax on
+	filetype plugin indent on
+
+
 " Environment Settings
 
 	set backspace=indent,eol,start  " Backspace for dummies
@@ -61,6 +62,7 @@
 "	set list 						" set nolist hide/show hidden chars eg ^I
 	set relativenumber              " Sets the linenumbers to be relative to the current line
 	set nospell                     " Turn Spell checking off
+"    colorscheme evening             " Your Favourite syntax colouring
 
 " Formatting {
 
