@@ -13,3 +13,6 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "bundle/solarized"]
+	path = bundle/solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
