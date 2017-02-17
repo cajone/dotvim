@@ -43,7 +43,7 @@
 
 " Plugin Key Mappings
     " Airline Theme
-        let g:airline_theme='kolor'
+        let g:airline_theme='base16'
         set laststatus=2 					  " Get instant feeback from airline
 
     " Ctrlp
