@@ -1,6 +1,6 @@
 " Environment {
 
-	" Identify platform {
+    " Identify platform {
         silent function! OSX()
             return has('macunix')
         endfunction
@@ -36,10 +36,10 @@
 " }
 
 " First the important part Pathogen !
-	runtime bundle/pathogen/autoload/pathogen.vim
-	execute pathogen#infect()
-	syntax on
-	filetype plugin indent on
+    runtime bundle/pathogen/autoload/pathogen.vim
+    execute pathogen#infect()
+    syntax on
+    filetype plugin indent on
 
 " Plugin Key Mappings
     " Airline Theme
@@ -57,26 +57,26 @@
 
 " Environment Settings
 
-	set backspace=indent,eol,start  " Backspace for dummies
-	set linespace=0                 " No extra spaces between rows
-	set number                      " Line numbers on
-	set showmatch                   " Show matching brackets/parenthesis
-	set incsearch                   " Find as you type search
-	set hlsearch                    " Highlight search terms
-	set winminheight=0              " Windows can be 0 line high
-	set ignorecase                  " Case insensitive search
-	set smartcase                   " Case sensitive when uc present
-	set wildmenu                    " Show list instead of just completing
-	set wildmode=list:longest,full  " Command <Tab> completion, list matches, then longest common part, then all.
-	set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
-	set scrolljump=5                " Lines to scroll when cursor leaves screen
-	set scrolloff=3                 " Minimum lines to keep above and below cursor
-	set foldenable                  " Auto fold code
-"	set list 						" set nolist hide/show hidden chars eg ^I
- 	if v:version > 730
-	    set relativenumber          " Sets the linenumbers to be relative to the current line
+    set backspace=indent,eol,start  " Backspace for dummies
+    set linespace=0                 " No extra spaces between rows
+    set number                      " Line numbers on
+    set showmatch                   " Show matching brackets/parenthesis
+    set incsearch                   " Find as you type search
+    set hlsearch                    " Highlight search terms
+    set winminheight=0              " Windows can be 0 line high
+    set ignorecase                  " Case insensitive search
+    set smartcase                   " Case sensitive when uc present
+    set wildmenu                    " Show list instead of just completing
+    set wildmode=list:longest,full  " Command <Tab> completion, list matches, then longest common part, then all.
+    set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
+    set scrolljump=5                " Lines to scroll when cursor leaves screen
+    set scrolloff=3                 " Minimum lines to keep above and below cursor
+    set foldenable                  " Auto fold code
+    "	set list 						" set nolist hide/show hidden chars eg ^I
+    if v:version > 730
+        set relativenumber          " Sets the linenumbers to be relative to the current line
     endif
-	set nospell                     " Turn Spell checking off
+    set nospell                     " Turn Spell checking off
     set background=dark             " light on dark
     colorscheme evening
     colorscheme solarized           " Your Favourite syntax colouring
