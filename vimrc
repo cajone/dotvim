@@ -23,7 +23,7 @@
         " On Windows, also use '.vim' instead of 'vimfiles'; this makes synchronization
         " across (heterogeneous) systems easier.
         if WINDOWS()
-          set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
+          set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME
         endif
     " }
 
@@ -73,9 +73,13 @@
 	set scrolloff=3                 " Minimum lines to keep above and below cursor
 	set foldenable                  " Auto fold code
 "	set list 						" set nolist hide/show hidden chars eg ^I
-	set relativenumber              " Sets the linenumbers to be relative to the current line
+ 	if v:version > 730
+	    set relativenumber          " Sets the linenumbers to be relative to the current line
+    endif
 	set nospell                     " Turn Spell checking off
-    colorscheme solarized                 " Your Favourite syntax colouring
+    set background=dark             " light on dark
+    colorscheme evening
+    colorscheme solarized           " Your Favourite syntax colouring
 
 " Formatting {
 
