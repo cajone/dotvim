@@ -41,6 +41,19 @@
 	syntax on
 	filetype plugin indent on
 
+" Plugin Key Mappings
+    " Airline Theme
+        let g:airline_theme='kolor'
+        set laststatus=2 					  " Get instant feeback from airline
+
+    " Ctrlp
+        let g:ctrlp_map = '<c-p>'
+        let g:ctrlp_cmd = 'CtrlP'
+
+    " Solarized
+        set t_Co=256
+        let g:solarized_termcolors=256
+        "let g:solarized_termcolors=256
 
 " Environment Settings
 
@@ -62,7 +75,7 @@
 "	set list 						" set nolist hide/show hidden chars eg ^I
 	set relativenumber              " Sets the linenumbers to be relative to the current line
 	set nospell                     " Turn Spell checking off
-"    colorscheme evening             " Your Favourite syntax colouring
+    colorscheme solarized                 " Your Favourite syntax colouring
 
 " Formatting {
 
@@ -75,7 +88,7 @@
     set nojoinspaces                " Prevents inserting two spaces after punctuation on a join (J)
     set splitright                  " Puts new vsplit windows to the right of the current
     set splitbelow                  " Puts new split windows to the bottom of the current
- 
+
 " Key Mappings
 
     " Some helpers to edit mode
@@ -93,14 +106,4 @@
     nnoremap <C-k> <C-w>k
     nnoremap <C-l> <C-w>l
 
-" Plugin Key Mappings
-    " Airline Theme
-        let g:airline_theme='kolor'
-        set laststatus=2 					  " Get instant feeback from airline
 
-    " Ctrlp
-        let g:ctrlp_map = '<c-p>'
-        let g:ctrlp_cmd = 'CtrlP'
-
-    " Solarized
-        let g:solarized_termcolors=256
