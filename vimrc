@@ -72,7 +72,7 @@
     set scrolljump=5                " Lines to scroll when cursor leaves screen
     set scrolloff=3                 " Minimum lines to keep above and below cursor
     set foldenable                  " Auto fold code
-    "	set list 						" set nolist hide/show hidden chars eg ^I
+"   set list                        " set nolist hide/show hidden chars eg
     if v:version > 730
         set relativenumber          " Sets the linenumbers to be relative to the current line
     endif
