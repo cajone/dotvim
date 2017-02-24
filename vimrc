@@ -78,8 +78,8 @@
     endif
     set nospell                     " Turn Spell checking off
     set background=dark             " light on dark
-    colorscheme evening
-    colorscheme solarized           " Your Favourite syntax colouring
+    colorscheme jellybeans 
+"   colorscheme solarized           " Your Favourite syntax colouring pens
 
 " Formatting {
 
