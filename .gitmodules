@@ -19,3 +19,18 @@
 [submodule "bundle/jellybeans"]
 	path = bundle/jellybeans
 	url = https://github.com/nanotech/jellybeans.vim.git
+[submodule "bundle/neosnippet_chef"]
+	path = bundle/neosnippet_chef
+	url = https://github.com/ryuzee/neosnippet_chef_recipe_snippet.git
+[submodule "bundle/neosnippet"]
+	path = bundle/neosnippet
+	url = https://github.com/Shougo/neosnippet.vim.git
+[submodule "bundle/neocomplete"]
+	path = bundle/neocomplete
+	url = https://github.com/Shougo/neocomplete.vim.git
+[submodule "bundle/neocomplcache"]
+	path = bundle/neocomplcache
+	url = https://github.com/Shougo/neocomplcache.vim
+[submodule "bundle/neosnippet-snippets"]
+	path = bundle/neosnippet-snippets
+	url = https://github.com/Shougo/neosnippet-snippets
