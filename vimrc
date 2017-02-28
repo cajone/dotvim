@@ -90,12 +90,13 @@
 "   set list                        " set nolist hide/show hidden chars eg
     if v:version > 703
         set relativenumber          " Sets the linenumbers to be relative to the current line
+        colorscheme jellybeans
+    else
+        colorscheme solarized
     endif
     set nospell                     " Turn Spell checking off
     set background=dark             " light on dark
-    colorscheme jellybeans
-        "jellbeans variants
-        highlight LineNr ctermfg=green " Change line number color to yellow
+    highlight LineNr ctermfg=green " Change line number color to yellow
 
 " Formatting {
 
