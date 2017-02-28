@@ -94,6 +94,8 @@
     set nospell                     " Turn Spell checking off
     set background=dark             " light on dark
     colorscheme jellybeans
+        "jellbeans variants
+        highlight LineNr ctermfg=green " Change line number color to yellow
 
 " Formatting {
 
