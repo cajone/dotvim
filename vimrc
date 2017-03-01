@@ -13,7 +13,8 @@
     " }
 
     " Basics {
-        set nocompatible        " Must be first line
+    " Assume a .vimrc file exists so no need for
+    " set nocompatible        " Must be first line ( turns off Vi compatibility )
         if !WINDOWS()
             set shell=/bin/sh
         endif
@@ -88,6 +89,7 @@
     set scrolloff=3                 " Minimum lines to keep above and below cursor
     set foldenable                  " Auto fold code
 "   set list                        " set nolist hide/show hidden chars eg
+    set hidden                      " Allow us to edit another buf without saving
     if v:version > 730
         set relativenumber          " Sets the linenumbers to be relative to the current line
     endif
