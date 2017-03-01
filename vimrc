@@ -89,13 +89,17 @@
     set scrolloff=3                 " Minimum lines to keep above and below cursor
     set foldenable                  " Auto fold code
 "   set list                        " set nolist hide/show hidden chars eg
-    set hidden                      " Allow us to edit another buf without saving
-    if v:version > 730
+    if v:version > 703
         set relativenumber          " Sets the linenumbers to be relative to the current line
+        colorscheme jellybeans
+    else 
+        colorscheme solarized
     endif
     set nospell                     " Turn Spell checking off
     set background=dark             " light on dark
-    colorscheme jellybeans
+    set nospell                     " Turn Spell checking off
+    set background=dark             " light on dark
+    highlight LineNr ctermfg=green " Change line number color to yellow
 
 " Formatting {
 
