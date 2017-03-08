@@ -68,8 +68,37 @@
         imap <C-k>     <Plug>(neosnippet_expand_or_jump)
         smap <C-k>     <Plug>(neosnippet_expand_or_jump)
         xmap <C-k>     <Plug>(neosnippet_expand_target)
+        inoremap <expr><C-g>     neocomplete#undo_completion()
+        inoremap <expr><C-l>     neocomplete#complete_common_string()
 
+        " Recommended key-mappings.
+        " <CR>: close popup and save indent.
+        inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+        function! s:my_cr_function()
+           return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
+          " For no inserting <CR> key.
+          "   "return pumvisible() ? "\<C-y>" : "\<CR>"
+        endfunction
 
+        " <TAB>: completion.
+        inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+        " <C-h>, <BS>: close popup and delete backword char.
+        inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
+        inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+
+        " Define dictionary.
+        let g:neocomplete#sources#dictionary#dictionaries = {
+            \ 'default' : '',
+            \ 'vimshell' : $HOME.'/.vimshell_hist',
+            \ 'scheme' : $HOME.'/.gosh_completions'
+            \ }
+    
+        " Define keyword.
+        if !exists('g:neocomplete#keyword_patterns')
+            let g:neocomplete#keyword_patterns = {}
+        endif
+        let g:neocomplete#keyword_patterns['default'] = '\h\w*'
+        
 
 " Environment Settings
 
@@ -92,7 +121,7 @@
     if v:version > 703
         set relativenumber          " Sets the linenumbers to be relative to the current line
         colorscheme jellybeans
-    else 
+    else
         colorscheme solarized
     endif
     set nospell                     " Turn Spell checking off
