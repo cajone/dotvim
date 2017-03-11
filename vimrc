@@ -29,7 +29,7 @@
     " }
 
     " Arrow Key Fix {
-        if &term[:4] == "xterm" || &term[:5] == 'screen' || &term[:3] == 'rxvt'
+        if &term[:3] == 'rxvt' || &term[:4] == "xterm" || &term[:5] == 'screen'
             inoremap <silent> <C-[>OC <RIGHT>
         endif
     " }
@@ -46,6 +46,9 @@
     " Airline Theme
         let g:airline_theme='base16'
         set laststatus=2 					    " Get instant feeback from airline
+
+    " Tagbar
+        nmap <F8> :TagbarToggle<CR>
 
     " Ctrlp
         let g:ctrlp_map = '<c-p>'
@@ -92,13 +95,13 @@
             \ 'vimshell' : $HOME.'/.vimshell_hist',
             \ 'scheme' : $HOME.'/.gosh_completions'
             \ }
-    
+
         " Define keyword.
         if !exists('g:neocomplete#keyword_patterns')
             let g:neocomplete#keyword_patterns = {}
         endif
         let g:neocomplete#keyword_patterns['default'] = '\h\w*'
-        
+
 
 " Environment Settings
 
