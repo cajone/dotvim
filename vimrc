@@ -50,6 +50,9 @@
     " Tagbar
         nmap <F8> :TagbarToggle<CR>
 
+    " Vim-Chef
+        autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
+
     " Ctrlp
         let g:ctrlp_map = '<c-p>'
         let g:ctrlp_cmd = 'CtrlP'
