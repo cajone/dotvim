@@ -132,9 +132,7 @@
     endif
     set nospell                     " Turn Spell checking off
     set background=dark             " light on dark
-    set nospell                     " Turn Spell checking off
-    set background=dark             " light on dark
-    highlight LineNr ctermfg=green " Change line number color to yellow
+    highlight LineNr ctermfg=green  " Change line number color to green
 
 " Formatting {
 
@@ -152,7 +150,7 @@
 
     " Some helpers to edit mode
     " http://vimcasts.org/e/14
-    "   let mapleader = '\'
+    let mapleader='\'
     cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
     map <leader>ew :e %%
     map <leader>es :sp %%
