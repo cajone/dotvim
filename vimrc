@@ -46,6 +46,7 @@
     " Airline Theme
         let g:airline_theme='base16'
         set laststatus=2 					    " Get instant feeback from airline
+        let g:airline#extensions#tagbar#enabled = 1
 
     " Tagbar
         nmap <F8> :TagbarToggle<CR>
