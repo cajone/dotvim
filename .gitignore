@@ -4,3 +4,4 @@ spell
 *.netrwhist
 tags
 tags-cn
+undodir/*

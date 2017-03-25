@@ -109,6 +109,7 @@
 
 " Environment Settings
 
+    set undodir=~/.vim/undodir
     set backspace=indent,eol,start  " Backspace for dummies
     set linespace=0                 " No extra spaces between rows
     set number                      " Line numbers on
