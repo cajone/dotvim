@@ -12,6 +12,7 @@ Once done then :
 
 mkdir ~/.vim
 cd ~/.vim
+mkdir undodir
 git clone https://github.com/cajone/dotvim.git . ( Note the trailing dot is important but will only work if .vim is empty )
 
 If on a linux system run the next line 

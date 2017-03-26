@@ -109,7 +109,8 @@
 
 " Environment Settings
 
-    set undodir=~/.vim/undodir
+    set undofile                    " Maintain undo history between sessions
+    set undodir=~/.vim/undodir      " used to store undo history files
     set backspace=indent,eol,start  " Backspace for dummies
     set linespace=0                 " No extra spaces between rows
     set number                      " Line numbers on
