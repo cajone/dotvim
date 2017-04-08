@@ -106,6 +106,10 @@
         endif
         let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 
+        function! Togglelinenumbers() 
+           set relativenumber!
+           set number!
+        endfunction
 
 " Environment Settings
 
@@ -166,4 +170,6 @@
     nnoremap <C-k> <C-w>k
     nnoremap <C-l> <C-w>l
 
+    " toggle relativenumber and numbers
+    map <leader>t  :call Togglelinenumbers()<cr>
 
