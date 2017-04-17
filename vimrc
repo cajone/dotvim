@@ -106,10 +106,11 @@
         endif
         let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 
-        function! Togglelinenumbers() 
-           set relativenumber!
-           set number!
-        endfunction
+    " Turn off all numbers
+    function! Togglelinenumbers() 
+       set relativenumber!
+       set number!
+    endfunction
 
 " Environment Settings
 
