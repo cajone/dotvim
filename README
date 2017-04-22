@@ -2,6 +2,10 @@ This repo is based on Drew Neil's Vimcasts episode #27
 
 http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 
+One of the submodule in this repo is neocomplete, this module requires lua to be compiled into your vim. To find out if this 
+module has been included in your version start vim and type :vim you should see +lua as part of the libraries.
+If this is not the case refer to the lua documention at https://www.lua.org/start.html
+
 Note: the following commands maybe distructive to your existing vim setup make sure you move your
 ~/.vim and ~/.vimrc out of the way eg:
 
@@ -12,8 +16,9 @@ Once done then :
 
 mkdir ~/.vim
 cd ~/.vim
-mkdir undodir
 git clone https://github.com/cajone/dotvim.git . ( Note the trailing dot is important but will only work if .vim is empty )
+
+mkdir undodir
 
 If on a linux system run the next line 
 
