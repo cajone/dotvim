@@ -172,5 +172,10 @@
     nnoremap <C-l> <C-w>l
 
     " toggle relativenumber and numbers
-    map <leader>t  :call Togglelinenumbers()<cr>
+    map <leader>nn  :call Togglelinenumbers()<cr>
+
+    " tab shortcuts
+    map <leader>tp  :tabprevious<cr>
+    map <leader>tn  :tabNext<cr>
+    map <leader>tc  :tabclose<cr>
 
