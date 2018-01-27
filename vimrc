@@ -118,7 +118,7 @@
         nnoremap <buffer> <leader>ap :ArduinoChooseProgrammer<CR>
 
     " Toggle numbers
-    function! Togglelinenumbers() 
+    function! Togglelinenumbers()
        set relativenumber!
        set number!
     endfunction
