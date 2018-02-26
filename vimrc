@@ -143,6 +143,7 @@
     set scrolloff=3                 " Minimum lines to keep above and below cursor
     set foldenable                  " Auto fold code
 "   set list                        " set nolist hide/show hidden chars eg
+"   set ff=unix or ff=dos           " change the file line endings
     if v:version > 703
         set relativenumber          " Sets the linenumbers to be relative to the current line
         colorscheme jellybeans
