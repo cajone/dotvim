@@ -44,3 +44,6 @@
 	path = bundle/vim-chef
 	url = https://github.com/vadv/vim-chef.git
 
+[submodule "bundle/agit"]
+	path = bundle/agit
+	url = https://github.com/cohama/agit.vim.git
