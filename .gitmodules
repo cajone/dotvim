@@ -1,7 +1,7 @@
 [submodule "bundle/arduino"]
 	path = bundle/arduino
 	url = https://github.com/stevearc/vim-arduino.git
-[submodule "bundle/bundle/agit"]
+[submodule "bundle/agit"]
 	path = bundle/bundle/agit
 	url = https://github.com/cohama/agit.vim.git
 [submodule "bundle/fugitive"]
