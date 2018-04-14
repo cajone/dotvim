@@ -14,6 +14,11 @@ Once done then :
 
 mkdir ~/.vim
 cd ~/.vim
+
+git clone git@github.com/cajone/dotvim.git . ( Use this if you have ssh keys in place : Note the trailing dot is important but will only work if .vim is empty )
+
+or
+
 git clone https://github.com/cajone/dotvim.git . ( Note the trailing dot is important but will only work if .vim is empty )
 
 mkdir undodir
