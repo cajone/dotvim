@@ -1,9 +1,9 @@
+[submodule "bundle/agit"]
+	path = bundle/agit
+	url = https://github.com/cohama/agit.vim.git
 [submodule "bundle/arduino"]
 	path = bundle/arduino
 	url = https://github.com/stevearc/vim-arduino.git
-[submodule "bundle/agit"]
-	path = bundle/bundle/agit
-	url = https://github.com/cohama/agit.vim.git
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
@@ -46,6 +46,4 @@
 [submodule "bundle/vim-chef"]
 	path = bundle/vim-chef
 	url = https://github.com/vadv/vim-chef.git
-[submodule "bundle/agit"]
-	path = bundle/agit
-	url = https://github.com/cohama/agit.vim.git
+
