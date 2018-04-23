@@ -28,6 +28,21 @@
         endif
     " }
 
+    " Set the Gviom gui size
+    if has("gui_running")
+    " GUI is running or is about to start.
+    " Maximize gvim window.
+        set lines=999 columns=999
+    else
+    " This is console Vim.
+        if exists("+lines")
+            set lines=50
+        endif
+        if exists("+columns")
+            set columns=60
+        endif
+    endif
+
     " Arrow Key Fix {
         if &term[:3] == 'rxvt' || &term[:4] == "xterm" || &term[:5] == 'screen'
             inoremap <silent> <C-[>OC <RIGHT>
