@@ -52,3 +52,6 @@
 [submodule "bundle/Dockerfile"]
 	path = bundle/Dockerfile
 	url = https://github.com/ekalinin/Dockerfile.vim.git
+[submodule "bundle/luainspec"]
+	path = bundle/luainspec
+	url = https://github.com/xolox/vim-lua-inspect.git
