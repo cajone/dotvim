@@ -55,3 +55,6 @@
 [submodule "bundle/luainspec"]
 	path = bundle/luainspec
 	url = https://github.com/xolox/vim-lua-inspect.git
+[submodule "bundle/vim_misc"]
+	path = bundle/vim_misc
+	url = https://github.com/xolox/vim-misc.git
