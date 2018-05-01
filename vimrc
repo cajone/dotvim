@@ -28,19 +28,19 @@
         endif
     " }
 
-    " Set the Gviom gui size
+    " Set the Gvim gui size
     if has("gui_running")
     " GUI is running or is about to start.
     " Maximize gvim window.
         set lines=999 columns=999
-    else
+"    else
     " This is console Vim.
-        if exists("+lines")
-            set lines=50
-        endif
-        if exists("+columns")
-            set columns=60
-        endif
+"        if exists("+lines")
+"            set lines=50
+"        endif
+"        if exists("+columns")
+"            set columns=60
+"        endif
     endif
 
     " Arrow Key Fix {
@@ -197,6 +197,9 @@
     nnoremap <C-j> <C-w>j
     nnoremap <C-k> <C-w>k
     nnoremap <C-l> <C-w>l
+
+    " Jump list driven with <ctrl-o> ( back ) and <ctrl-i> ( forward )
+    " map <leader>j :ju <cr> 
 
     " toggle relativenumber and numbers
     map <leader>nn  :call Togglelinenumbers()<cr>
