@@ -52,3 +52,9 @@
 [submodule "bundle/Dockerfile"]
 	path = bundle/Dockerfile
 	url = https://github.com/ekalinin/Dockerfile.vim.git
+[submodule "bundle/vim-misc"]
+	path = bundle/vim-misc
+	url = http://github.com/xolox/vim-misc
+[submodule "bundle/vim-lua"]
+	path = bundle/vim-lua
+	url = http://github.com/xolox/vim-lua-ftplugin
