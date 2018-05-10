@@ -31,7 +31,7 @@
     " Set the Gvim gui size
     if has("gui_running")
     " GUI is running or is about to start.
-    " Maximize gvim window.
+    " 'Maximize' gvim window.
         set lines=999 columns=999
 "    else
     " This is console Vim.
@@ -209,3 +209,6 @@
     map <leader>tn  :tabNext<cr>
     map <leader>tc  :tabclose<cr>
 
+    " Saved Macros
+    let @z='ysiw"'
+    let @x="ysiw'"
