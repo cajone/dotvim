@@ -212,3 +212,6 @@
     " Saved Macros
     let @d='ysiw"'
     let @s="ysiw'"
+
+    " tunrn off highlighted search
+    map <leader>z  :nohlsearch<cr>
