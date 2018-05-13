@@ -210,5 +210,5 @@
     map <leader>tc  :tabclose<cr>
 
     " Saved Macros
-    let @z='ysiw"'
-    let @x="ysiw'"
+    let @d='ysiw"'
+    let @s="ysiw'"
