@@ -199,7 +199,7 @@
     nnoremap <C-l> <C-w>l
 
     " Jump list driven with <ctrl-o> ( back ) and <ctrl-i> ( forward )
-    " map <leader>j :ju <cr> 
+    " map <leader>j :ju <cr>
 
     " toggle relativenumber and numbers
     map <leader>nn  :call Togglelinenumbers()<cr>
