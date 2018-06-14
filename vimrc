@@ -215,3 +215,5 @@
 
     " tunrn off highlighted search
     map <leader>z  :nohlsearch<cr>
+
+    map <leader>mt :git mergetool --tool diffconflicts
