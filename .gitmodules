@@ -58,12 +58,6 @@
 [submodule "bundle/vim-lua"]
 	path = bundle/vim-lua
 	url = http://github.com/xolox/vim-lua-ftplugin
-[submodule "bundle/liquidcarbon"]
-	path = bundle/liquidcarbon
-	url = git@github.com:vim-scripts/Liquid-Carbon.git
-[submodule "bundle/papercolor"]
-	path = bundle/papercolor
-	url = git@github.com:NLKNguyen/papercolor-theme.git
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = git@github.com:tpope/vim-surround.git
