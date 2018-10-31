@@ -181,6 +181,9 @@
     set splitright                  " Puts new vsplit windows to the right of the current
     set splitbelow                  " Puts new split windows to the bottom of the current
 
+" Run cookstyle using make
+
+    set makeprg=cookstyle
 " Key Mappings
 
     " Some helpers to edit mode
