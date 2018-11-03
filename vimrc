@@ -16,7 +16,7 @@
     " Assume a .vimrc file exists so no need for
     " set nocompatible        " Must be first line ( turns off Vi compatibility )
         if !WINDOWS()
-            set shell=/bin/sh
+            set shell=/bin/bash
         endif
     " }
 
@@ -211,6 +211,7 @@
     " tab shortcuts
     map <leader>tp  :tabprevious<cr>
     map <leader>tn  :tabNext<cr>
+    map <leader>tN  :tabnew<cr>
     map <leader>tc  :tabclose<cr>
 
     " Saved Macros
