@@ -39,6 +39,6 @@ To use this vimrc configuration with nvim :
 
 start nvim
 :help nvim-from-vim
-do sectiosn 1 and 2
+do sections 1 and 2
 
 
