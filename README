@@ -35,3 +35,10 @@ git submodule update --init
 
 last but not least start vim and run :Helptags to load all the help files for the submodules
 
+To use this vimrc configuration with nvim :
+
+start nvim
+:help nvim-from-vim
+do sectiosn 1 and 2
+
+
