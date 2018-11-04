@@ -163,7 +163,8 @@
         set relativenumber          " Sets the linenumbers to be relative to the current line
         colorscheme jellybeans
     else
-        colorscheme solarized
+        colorscheme xoria256
+"        colorscheme solarized
     endif
     set nospell                     " Turn Spell checking off
     set background=dark             " light on dark
