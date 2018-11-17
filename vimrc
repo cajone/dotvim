@@ -162,6 +162,7 @@
     if v:version > 703
         set relativenumber          " Sets the linenumbers to be relative to the current line
         colorscheme jellybeans
+"        colorscheme xoria256
     else
         colorscheme xoria256
 "        colorscheme solarized
