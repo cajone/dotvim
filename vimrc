@@ -202,6 +202,9 @@
 
     set makeprg=cookstyle
 
+" Setfiletypes for inspec
+    au BufRead,BufNewFile *_test.rb set syntax=ruby.inspec
+
 " Key Mappings
 
     " Some helpers to edit mode
