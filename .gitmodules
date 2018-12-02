@@ -61,3 +61,6 @@
 [submodule "bundle/xoria256"]
 	path = bundle/xoria256
 	url = https://github.com/vim-scripts/xoria256.vim.git
+[submodule "bundle/neosnippet_inspec"]
+	path = bundle/neosnippet_inspec
+	url = https://github.com/cajone/neosnippet_inspec.git
