@@ -150,7 +150,7 @@
     function! DebugOff()
       profile pause
       noautocmd qall
-      " read the output log /tmp/profile.log for clues
+      " read the output log profile.log for clues
     endfunction
 
 " Environment Settings
