@@ -138,6 +138,21 @@
        set number!
     endfunction
 
+    " Debug plugins on
+    function! DebugOn()
+      profile start profile.log
+      profile func *
+      profile file *
+      " do some actions that your trying to debug
+    endfunction
+
+    " Debug plugins off
+    function! DebugOff()
+      profile pause
+      noautocmd qall
+      " read the output log /tmp/profile.log for clues
+    endfunction
+
 " Environment Settings
 
     set undofile                    " Maintain undo history between sessions
@@ -225,3 +240,6 @@
 
     map <leader>mt :git mergetool --tool diffconflicts
 
+    " turn on debug mode
+    map <leader>DO :call DebugOn()<cr>
+    map <leader>Do :call DebugOff()<cr>
