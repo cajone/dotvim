@@ -69,6 +69,11 @@
     " Vim-Chef
         autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
 
+    " Vim-Inspec
+        autocmd FileType ruby set filetype=ruby.inspec
+        au BufRead,BufNewFile *_test.rb set syntax=ruby.inspec
+
+
     " Ctrlp
         let g:ctrlp_map = '<c-p>'
         let g:ctrlp_cmd = 'CtrlP'
@@ -201,9 +206,6 @@
 " Run cookstyle using make
 
     set makeprg=cookstyle
-
-" Setfiletypes for inspec
-    au BufRead,BufNewFile *_test.rb set syntax=ruby.inspec
 
 " Key Mappings
 
