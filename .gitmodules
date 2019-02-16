@@ -69,3 +69,6 @@
 [submodule "bundle/neosnippet_inspec"]
   path = bundle/neosnippet_inspec
   url = https://github.com/cajone/neosnippet_inspec.git
+[submodule "bundle/openscad.git"]
+	path = bundle/openscad.git
+	url = https://github.com/sirtaj/vim-openscad.git
