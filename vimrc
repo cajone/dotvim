@@ -205,7 +205,7 @@
 
 " Run cookstyle using make
 
-    set makeprg=cookstyle
+    set makeprg=cookstyle -a
 
 " Key Mappings
 
