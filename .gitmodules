@@ -72,3 +72,9 @@
 [submodule "bundle/openscad.git"]
 	path = bundle/openscad.git
 	url = https://github.com/sirtaj/vim-openscad.git
+[submodule "bundle/tmux"]
+	path = bundle/tmux
+	url = https://github.com/tmux-plugins/vim-tmux.git
+[submodule "bundle/commentary"]
+	path = bundle/commentary
+	url = https://github.com/tpope/vim-commentary.git
