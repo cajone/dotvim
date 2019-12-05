@@ -248,3 +248,6 @@
     " turn on debug mode
     map <leader>DO :call DebugOn()<cr>
     map <leader>Do :call DebugOff()<cr>
+
+    " Remove trailing white space from xml files
+    autocmd BufWritePre *.xml %s/\s\+$//e
