@@ -187,6 +187,17 @@
         colorscheme xoria256
 "        colorscheme solarized
     endif
+
+    " Change Diff highlight colours
+    " DiffAdd     diff mode: Added line
+    " DiffChange  diff mode: Changed line
+    " DiffDelete  diff mode: Deleted line
+    " DiffText    diff mode: Changed text within a changed line
+    hi DiffAdd      gui=none    guifg=NONE          guibg=#bada9f
+    hi DiffChange   gui=none    guifg=NONE          guibg=#e5d5ac
+    hi DiffDelete   gui=bold    guifg=#ff8080       guibg=#ffb0b0
+    hi DiffText     gui=none    guifg=NONE          guibg=#8cbee2
+
     set nospell                     " Turn Spell checking off
     set background=dark             " light on dark
     highlight LineNr ctermfg=green  " Change line number color to green
@@ -203,6 +214,10 @@
     set splitright                  " Puts new vsplit windows to the right of the current
     set splitbelow                  " Puts new split windows to the bottom of the current
 
+    " if &diff                      " Turn syntax highlighting off in diff mode
+    "  syntax off
+    " endif
+    
 " Run cookstyle using make
 
     set makeprg="cookstyle -a"
