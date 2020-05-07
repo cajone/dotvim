@@ -224,6 +224,9 @@
 
 " Key Mappings
 
+    " Ctrl W |   # Expands the current pane to full size
+    " Ctrl W =   # resets the window panes 
+
     " Some helpers to edit mode
     " http://vimcasts.org/e/14
     let mapleader='\'
