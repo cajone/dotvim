@@ -217,7 +217,7 @@
     " if &diff                      " Turn syntax highlighting off in diff mode
     "  syntax off
     " endif
-    
+ 
 " Run cookstyle using make
 
     set makeprg="cookstyle -a"
