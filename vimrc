@@ -1,5 +1,4 @@
 " Environment {
-
     " Identify platform {
         silent function! OSX()
             return has('macunix')
@@ -11,7 +10,6 @@
             return  (has('win32') || has('win64'))
         endfunction
     " }
-
     " Basics {
     " Assume a .vimrc file exists so no need for
     " set nocompatible        " Must be first line ( turns off Vi compatibility )
@@ -19,7 +17,6 @@
             set shell=/bin/bash
         endif
     " }
-
     " Windows Compatible {
         " On Windows, also use '.vim' instead of 'vimfiles'; this makes synchronization
         " across (heterogeneous) systems easier.
@@ -27,7 +24,6 @@
           set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME
         endif
     " }
-
     " Set the Gvim gui size
     if has("gui_running")
     " GUI is running or is about to start.
@@ -42,22 +38,22 @@
 "            set columns=60
 "        endif
     endif
-
     " Arrow Key Fix {
         if &term[:3] == 'rxvt' || &term[:4] == "xterm" || &term[:5] == 'screen'
             inoremap <silent> <C-[>OC <RIGHT>
         endif
     " }
+" }  // End of Environment
 
-" }
-
-" First the important part Pathogen !
+" First the important part Pathogen ! {
     runtime bundle/pathogen/autoload/pathogen.vim
     execute pathogen#infect()
     syntax on
     filetype plugin indent on
+" } // End of Pathogen
 
-" Plugin Key Mappings
+
+" Plugin Key Mappings {
     " Airline Theme
         let g:airline_theme='base16'
         set laststatus=2 					    " Get instant feeback from airline
@@ -72,7 +68,6 @@
     " Vim-Inspec
         autocmd FileType ruby set filetype=ruby.inspec
         au BufRead,BufNewFile *_test.rb set syntax=ruby.inspec
-
 
     " Ctrlp
         let g:ctrlp_map = '<c-p>'
@@ -136,7 +131,9 @@
         nnoremap <buffer> <leader>ad :ArduinoUploadAndSerial<CR>
         nnoremap <buffer> <leader>ab :ArduinoChooseBoard<CR>
         nnoremap <buffer> <leader>ap :ArduinoChooseProgrammer<CR>
+" } // End of key bindings
 
+" Functions {
     " Toggle numbers
     function! Togglelinenumbers()
        set relativenumber!
@@ -158,7 +155,7 @@
       " read the output log profile.log for clues
     endfunction
 
-" Environment Settings
+" } // End of users Functions
 
     set undofile                    " Maintain undo history between sessions
     set undodir=~/.vim/undodir      " used to store undo history files
@@ -269,3 +266,6 @@
 
     " Remove trailing white space from xml files
     autocmd BufWritePre *.xml %s/\s\+$//e
+
+    " Format json files with tabbing = 2
+    map <leader>fj :%!/bin/env python -m json.tool --indent=2<cr>
