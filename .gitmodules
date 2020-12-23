@@ -78,3 +78,6 @@
 [submodule "bundle/commentary"]
 	path = bundle/commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule "vim_markdown"]
+	path = vim_markdown
+	url = https://github.com/gabrielelana/vim-markdown.git
