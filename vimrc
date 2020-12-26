@@ -269,3 +269,4 @@
 
     " Format json files with tabbing = 2
     map <leader>fj :%!/bin/env python -m json.tool --indent=2<cr>
+    map <leader>fx :%!xmllint --encode UTF-8 --format %<cr>
