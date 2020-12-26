@@ -2,6 +2,9 @@
 
 http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 
+##### List of modules in this configuration 
+[modules used in this configuration](modules.md)
+
 One of the submodules in this repo is neocomplete, this module requires lua to be compiled into your vim. 
 To find out if this module has been included in your version start vim and type :vim you should see +lua a part of the libraries. 
 If this is not the case refer to the lua documention at https://www.lua.org/start.html
@@ -21,14 +24,22 @@ mkdir ~/.vim
 cd ~/.vim
 ```
 
-git clone git@github.com/cajone/dotvim.git . <i>( Use this if you have ssh keys in place : Note the trailing dot is important but will only work if .vim is empty )</i>
+```zsh
+git clone git@github.com/cajone/dotvim.git . 
+```
+<i><b>( Use this if you have ssh keys in place : Note the trailing dot is important but will only work if .vim is empty )</b></i>
 
 or
 
-git clone https://github.com/cajone/dotvim.git . <i>( Note the trailing dot is important but will only work if .vim is empty )</i>
 
 ```zsh
-mkdir undodir
+git clone https://github.com/cajone/dotvim.git . 
+```
+
+<i><b>( Note the trailing dot is important but will only work if .vim is empty )</b></i>
+
+```zsh
+mkdir undodir  # this gives you persistent undo capabilities across sessions
 ```
 
 If on a linux system run the next line:
