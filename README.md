@@ -53,21 +53,28 @@ last but not least start <b>vim</b> and run <b>:Helptags</b> to load all the hel
 ### NeoVim (nvim)
 To use this vimrc configuration with nvim :
 
-start nvim
+start <b>nvim</b>
+
+```vim
 :help nvim-from-vim
+```
 
 but basically for unix installs do the following ( cribbed from docs https://neovim.io/doc/user/nvim.html#nvim-from-vim )
 
-start nvim
+start <b>nvim</b>
+
 1. To start the transition, create your |init.vim| (user config) file:
 
+```vim
     :call mkdir(stdpath('config'), 'p')
     :exe 'edit '.stdpath('config').'/init.vim'
+```
 
 2. Add these contents to the file:
 
+```zsh
     set runtimepath^=~/.vim runtimepath+=~/.vim/after
     let &packpath = &runtimepath
     source ~/.vimrc
-
+```
 
