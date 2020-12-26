@@ -1,4 +1,4 @@
-# This repo is based on Drew Neil's Vimcasts episode #27
+# Repo is based on Drew Neil's Vimcasts episode #27
 
 http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 
