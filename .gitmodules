@@ -77,9 +77,13 @@
 [submodule "bundle/vim-instant-markdown"]
 	path = bundle/vim-instant-markdown
 	url = https://github.com/instant-markdown/vim-instant-markdown.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
 [submodule "vim_markdown"]
 	path = vim_markdown
 	url = https://github.com/gabrielelana/vim-markdown.git
+  ignore = dirty
