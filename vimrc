@@ -11,12 +11,13 @@
         endfunction
     " }
     " Basics {
-    " Assume a .vimrc file exists so no need for
-    " set nocompatible        " Must be first line ( turns off Vi compatibility )
-        if !WINDOWS()
-            set shell=/bin/bash
-        endif
+      " Assume a .vimrc file exists so no need for
+      " set nocompatible        " Must be first line ( turns off Vi compatibility )
+          if !WINDOWS()
+              set shell=/bin/bash
+          endif
     " }
+
     " Windows Compatible {
         " On Windows, also use '.vim' instead of 'vimfiles'; this makes synchronization
         " across (heterogeneous) systems easier.
@@ -24,20 +25,15 @@
           set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME
         endif
     " }
-    " Set the Gvim gui size
-    if has("gui_running")
-    " GUI is running or is about to start.
-    " 'Maximize' gvim window.
-        set lines=999 columns=999
-"    else
-    " This is console Vim.
-"        if exists("+lines")
-"            set lines=50
-"        endif
-"        if exists("+columns")
-"            set columns=60
-"        endif
-    endif
+
+    " Set the Gvim gui size {
+        if has("gui_running")
+        " GUI is running or is about to start.
+        " 'Maximize' gvim window.
+            set lines=999 columns=999
+        endif
+    " }
+
     " Arrow Key Fix {
         if &term[:3] == 'rxvt' || &term[:4] == "xterm" || &term[:5] == 'screen'
             inoremap <silent> <C-[>OC <RIGHT>
@@ -83,49 +79,6 @@
         let g:solarized_termcolors=256
         "let g:solarized_termcolors=256
 
-    " neocomplete.
-        let g:neocomplete#enable_at_startup = 1
-        let g:neocomplete#enable_smart_case = 2                 " Use smartcase.
-        let g:neocomplete#sources#syntax#min_keyword_length = 3 " Set minimum syntax keyword length.
-
-
-        " Plugin key-mappings.
-        " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
-        imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-        smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-        xmap <C-k>     <Plug>(neosnippet_expand_target)
-        inoremap <expr><C-g>     neocomplete#undo_completion()
-        inoremap <expr><C-l>     neocomplete#complete_common_string()
-
-        " Recommended key-mappings.
-        " <CR>: close popup and save indent.
-        inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-        function! s:my_cr_function()
-           return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
-          " For no inserting <CR> key.
-          "   "return pumvisible() ? "\<C-y>" : "\<CR>"
-        endfunction
-
-        " <TAB>: completion.
-        inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-        " <C-h>, <BS>: close popup and delete backword char.
-        inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-        inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
-
-        " Define dictionary.
-        let g:neocomplete#sources#dictionary#dictionaries = {
-            \ 'default' : '',
-            \ 'vimshell' : $HOME.'/.vimshell_hist',
-            \ 'scheme' : $HOME.'/.gosh_completions'
-            \ }
-
-        " Define keyword.
-        if !exists('g:neocomplete#keyword_patterns')
-            let g:neocomplete#keyword_patterns = {}
-        endif
-        let g:neocomplete#keyword_patterns['default'] = '\h\w*'
-
-
     " Arduino
         let g:arduino_cmd = '/usr/bin/arduino'                      "Runtime Path
         let g:arduino_dir = '/usr/share/arduino'                    "Arduino home dir
@@ -137,7 +90,7 @@
         nnoremap <buffer> <leader>ap :ArduinoChooseProgrammer<CR>
 " } // End of key bindings
 
-" Functions {
+" Users Functions {
     " Toggle numbers
     function! Togglelinenumbers()
        set relativenumber!
@@ -257,7 +210,7 @@
 
     " vimdiff
     map <leader>dg :diffget
-
+    map <leader>mt :git mergetool --tool diffconflicts
 
     " Saved Macros
     let @d='ysiw"'
@@ -265,8 +218,6 @@
 
     " tunrn off highlighted search
     map <leader>z  :nohlsearch<cr>
-
-    map <leader>mt :git mergetool --tool diffconflicts
 
     " turn on debug mode
     map <leader>DO :call DebugOn()<cr>
