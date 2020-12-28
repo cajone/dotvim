@@ -97,6 +97,21 @@
         let g:gitgutter_sign_removed_first_line = '^'
         let g:gitgutter_sign_modified_removed = '<'
 
+    
+    " Instant_markdown-preview
+        filetype plugin on
+        "Uncomment to override defaults:
+        let g:instant_markdown_slow = 1
+        let g:instant_markdown_autostart = 0
+        " let g:instant_markdown_open_to_the_world = 1
+        " let g:instant_markdown_allow_unsafe_content = 1
+        " let g:instant_markdown_allow_external_content = 0
+        " let g:instant_markdown_mathjax = 1
+        let g:instant_markdown_logfile = '/tmp/instant_markdown.log'
+        " let g:instant_markdown_autoscroll = 0
+        " let g:instant_markdown_port = 8888
+        " let g:instant_markdown_python = 1
+
 " } // End of key bindings
 
 " Users Functions {
@@ -225,7 +240,7 @@
     let @d='ysiw"'
     let @s="ysiw'"
 
-    " tunrn off highlighted search
+    " turn off highlighted search
     map <leader>z  :nohlsearch<cr>
 
     " turn on debug mode
@@ -242,3 +257,8 @@
     " gitgutter block jump mappings
     nmap <leader>jn <Plug>(GitGutterNextHunk)  " git next
     nmap <leader>jp <Plug>(GitGutterPrevHunk)  " git previous
+
+    " Instant_markdown_preview on and off
+    map <leader>md :InstantMarkdownPreview<cr>   " Switch on 
+    map <leader>mo :InstantMarkdownStop<cr>      " Switch off
+
