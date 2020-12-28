@@ -83,3 +83,6 @@
 [submodule "bundle/agit"]
 	path = bundle/agit
 	url = https://github.com/cohama/agit.vim.git
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git

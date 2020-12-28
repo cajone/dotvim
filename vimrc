@@ -88,6 +88,15 @@
         nnoremap <buffer> <leader>ad :ArduinoUploadAndSerial<CR>
         nnoremap <buffer> <leader>ab :ArduinoChooseBoard<CR>
         nnoremap <buffer> <leader>ap :ArduinoChooseProgrammer<CR>
+
+    " Gitgutter
+      " Use fontawesome icons as signs
+        let g:gitgutter_sign_added = '+'
+        let g:gitgutter_sign_modified = '>'
+        let g:gitgutter_sign_removed = '-'
+        let g:gitgutter_sign_removed_first_line = '^'
+        let g:gitgutter_sign_modified_removed = '<'
+
 " } // End of key bindings
 
 " Users Functions {
@@ -229,3 +238,7 @@
     " Format json files with tabbing = 2
     map <leader>fj :%!/bin/env python -m json.tool --indent=2<cr>
     map <leader>fx :%!xmllint --encode UTF-8 --format %<cr>
+
+    " gitgutter block jump mappings
+    nmap <leader>jn <Plug>(GitGutterNextHunk)  " git next
+    nmap <leader>jp <Plug>(GitGutterPrevHunk)  " git previous
