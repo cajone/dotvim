@@ -80,3 +80,6 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "bundle/agit"]
+	path = bundle/agit
+	url = https://github.com/cohama/agit.vim.git
