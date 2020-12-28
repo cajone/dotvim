@@ -83,9 +83,4 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
-[submodule "bundle/vinegar"]
-	path = bundle/vinegar
-	url = https://github.com/tpope/vim-vinegar.git
-[submodule "bundle/obsession"]
-	path = bundle/obsession
-	url = https://github.com/tpope/vim-obsession.git
+
