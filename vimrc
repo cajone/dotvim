@@ -43,6 +43,10 @@
             inoremap <silent> <C-[>OC <RIGHT>
         endif
     " }
+
+    "Global cut and paste mapped to y & p
+    set clipboard+=unnamed
+
 " }  // End of Environment
 
 " First the important part Pathogen ! {
@@ -250,6 +254,10 @@
     map <leader>tn  :tabNext<cr>
     map <leader>tN  :tabnew<cr>
     map <leader>tc  :tabclose<cr>
+
+    " vimdiff
+    map <leader>dg :diffget
+
 
     " Saved Macros
     let @d='ysiw"'
