@@ -38,9 +38,6 @@
 	path = bundle/vim-chef
 	url = https://github.com/vadv/vim-chef.git
   ignore = dirty
-[submodule "bundle/agit"]
-	path = bundle/agit
-	url = https://github.com/cohama/agit.vim.git
 [submodule "bundle/awesome_themes"]
 	path = bundle/awesome_themes
 	url = https://github.com/rafi/awesome-vim-colorschemes.git
@@ -83,4 +80,3 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
-
