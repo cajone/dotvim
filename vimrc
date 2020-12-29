@@ -112,6 +112,18 @@
         " let g:instant_markdown_port = 8888
         " let g:instant_markdown_python = 1
 
+    " deoplete
+        let g:python3_host_prog = '/usr/bin/python'
+        set runtimepath+=~/.vim/bundle/deoplete
+        let g:deoplete#enable_at_startup = 0
+    "   if has('nvim')
+    "     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    "   else
+    "     Plug 'Shougo/deoplete.nvim'
+    "     Plug 'roxma/nvim-yarp'
+    "     Plug 'roxma/vim-hug-neovim-rpc'
+    "   endif
+
 " } // End of key bindings
 
 " Users Functions {
@@ -262,3 +274,5 @@
     map <leader>md :InstantMarkdownPreview<cr>   " Switch on 
     map <leader>mo :InstantMarkdownStop<cr>      " Switch off
 
+    " Deoplete toggle
+    map <leader>dt :call deoplete#toggle()<cr>
