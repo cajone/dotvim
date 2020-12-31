@@ -22,18 +22,6 @@
 [submodule "bundle/jellybeans"]
 	path = bundle/jellybeans
 	url = https://github.com/nanotech/jellybeans.vim.git
-[submodule "bundle/neosnippet_chef"]
-	path = bundle/neosnippet_chef
-	url = https://github.com/ryuzee/neosnippet_chef_recipe_snippet.git
-[submodule "bundle/neosnippet"]
-	path = bundle/neosnippet
-	url = https://github.com/Shougo/neosnippet.vim.git
-[submodule "bundle/neocomplcache"]
-	path = bundle/neocomplcache
-	url = https://github.com/Shougo/neocomplcache.vim
-[submodule "bundle/neosnippet-snippets"]
-	path = bundle/neosnippet-snippets
-	url = https://github.com/Shougo/neosnippet-snippets
 [submodule "bundle/vim-chef"]
 	path = bundle/vim-chef
 	url = https://github.com/vadv/vim-chef.git
@@ -56,9 +44,6 @@
 	path = bundle/xoria256
 	url = https://github.com/vim-scripts/xoria256.vim.git
   ignore = dirty
-[submodule "bundle/neosnippet_inspec"]
-  path = bundle/neosnippet_inspec
-  url = https://github.com/cajone/neosnippet_inspec.git
 [submodule "bundle/openscad.git"]
 	path = bundle/openscad.git
 	url = https://github.com/sirtaj/vim-openscad.git
@@ -95,3 +80,12 @@
 [submodule "bundle/hug-neovim-rpc"]
 	path = bundle/hug-neovim-rpc
 	url = https://github.com/roxma/vim-hug-neovim-rpc.git
+[submodule "bundle/vim-snippets"]
+	path = bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
+[submodule "bundle/neosnippet.vim"]
+	path = bundle/neosnippet.vim
+	url = https://github.com/Shougo/neosnippet.vim.git
+[submodule "bundle/neosnippets-snippets"]
+	path = bundle/neosnippets-snippets
+	url = https://github.com/Shougo/neosnippet-snippets.git
