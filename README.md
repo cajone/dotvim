@@ -5,11 +5,9 @@ http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-patho
 ##### List of modules in this configuration 
 [modules used in this configuration](modules.md)
 
-One of the submodules in this repo is neocomplete, this module requires lua to be compiled into your vim. 
-To find out if this module has been included in your version start vim and type :vim you should see +lua a part of the libraries. 
-If this is not the case refer to the lua documention at https://www.lua.org/start.html
+* Note: neocomplete has been depricated in vim 8+.  I have switched this out for deoplete.
 
-Note: the following commands maybe distructive to your existing vim setup make sure you move your
+* Note: the following commands maybe distructive to your existing vim setup make sure you move your
 ~/.vim and ~/.vimrc out of the way eg:
 
 ```zsh
@@ -59,6 +57,13 @@ git submodule update --init
 
 ### Helptags
 last but not least start <b>vim</b> and run <b>:Helptags</b> to load all the help files for the submodules
+
+### \<leader\>
+This vimrc file uses <b>'\\'</b>  as its leader key, if you wish to change this to something else change this line in the vimrc
+
+```vim
+    let mapleader='\'
+```
 
 
 ### NeoVim (nvim)
