@@ -69,6 +69,9 @@
         autocmd FileType ruby set filetype=ruby.inspec
         au BufRead,BufNewFile *_test.rb set syntax=ruby.inspec
 
+    "Spelling
+        au BufRead,BufNewFile *.md set spell
+
     " Ctrlp
         let g:ctrlp_map = '<c-p>'
         let g:ctrlp_cmd = 'CtrlP'
