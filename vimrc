@@ -72,6 +72,8 @@
     "Spelling
         autocmd BufEnter *.md set spell | set dictionary+=/usr/share/dict/cracklib-small | set complete+=k
         autocmd BufLeave *.md set nospell
+        autocmd BufEnter *.txt  set spell | set dictionary+=/usr/share/dict/cracklib-small | set complete+=k
+        autocmd BufLeave *.txt  set nospell
 
     " Ctrlp
         let g:ctrlp_map = '<c-p>'
