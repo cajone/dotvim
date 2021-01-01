@@ -70,7 +70,8 @@
         au BufRead,BufNewFile *_test.rb set syntax=ruby.inspec
 
     "Spelling
-        au BufRead,BufNewFile *.md set spell
+        autocmd BufEnter *.md set spell | set dictionary+=/usr/share/dict/cracklib-small | set complete+=k
+        autocmd BufLeave *.md set nospell
 
     " Ctrlp
         let g:ctrlp_map = '<c-p>'
