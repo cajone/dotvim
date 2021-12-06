@@ -62,6 +62,16 @@
     " Tagbar
         nmap <F8> :TagbarToggle<CR>
 
+    " VimWiki
+        
+        let g:vimwiki_list = [{'path': '~/vimwiki/',
+                              \ 'syntax': 'markdown', 'ext': '.md'}]
+
+        let g:vimwiki_auto_chdir = 1
+        augroup vimwiki
+          autocmd BufWritePost ~/vimwiki/* !git add "%";git commit -m "Auto commit of %:t." "%"
+        augroup END
+
     " Vim-Chef
         autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
 
@@ -198,6 +208,7 @@
     if v:version > 703
         set relativenumber          " Sets the linenumbers to be relative to the current line
         colorscheme jellybeans
+        colorscheme xoria256
 "        colorscheme xoria256
     else
         colorscheme xoria256
