@@ -107,3 +107,9 @@
 [submodule "bundle/nvim-treesitter-textobjects"]
 	path = bundle/nvim-treesitter-textobjects
 	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects.git
+[submodule "bundle/molokai"]
+	path = bundle/molokai
+	url = https://github.com/tomasr/molokai.git
+[submodule "bundle/taskwiki"]
+	path = bundle/taskwiki
+	url = https://github.com/tbabej/taskwiki.git
