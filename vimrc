@@ -272,6 +272,10 @@
     " Jump list driven with <ctrl-o> ( back ) and <ctrl-i> ( forward )
     " map <leader>j :ju <cr>
 
+    " toggle vsplit / hsplit
+    map <F3> <C-w>t<C-w>K
+    map <F4> <C-w>t<C-w>H
+
     " toggle relativenumber and numbers
     map <leader>nn  :call Togglelinenumbers()<cr>
 
@@ -284,6 +288,9 @@
     " vimdiff
     map <leader>dg :diffget
     map <leader>mt :git mergetool --tool diffconflicts
+
+    " add timestamp at end of line
+    nnoremap <F5> A<C-r>=strftime("%c")<CR>
 
     " Saved Macros
     let @d='ysiw"'
