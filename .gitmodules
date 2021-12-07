@@ -89,24 +89,6 @@
 [submodule "bundle/neosnippets-snippets"]
 	path = bundle/neosnippets-snippets
 	url = https://github.com/Shougo/neosnippet-snippets.git
-[submodule "bundle/nvim-lspconfig"]
-	path = bundle/nvim-lspconfig
-	url = https://github.com/neovim/nvim-lspconfig.git
-[submodule "bundle/nvim-lspinstall"]
-	path = bundle/nvim-lspinstall
-	url = https://github.com/kabouzeid/nvim-lspinstall.git
-[submodule "bundle/lspsaga.nvim"]
-	path = bundle/lspsaga.nvim
-	url = https://github.com/glepnir/lspsaga.nvim.git
-[submodule "bundle/nvim-compe"]
-	path = bundle/nvim-compe
-	url = https://github.com/hrsh7th/nvim-compe.git
-[submodule "bundle/nvim-treesitter"]
-	path = bundle/nvim-treesitter
-	url = https://github.com/nvim-treesitter/nvim-treesitter.git
-[submodule "bundle/nvim-treesitter-textobjects"]
-	path = bundle/nvim-treesitter-textobjects
-	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects.git
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = https://github.com/tomasr/molokai.git
