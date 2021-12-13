@@ -95,3 +95,6 @@
 [submodule "bundle/taskwiki"]
 	path = bundle/taskwiki
 	url = https://github.com/tbabej/taskwiki.git
+[submodule "bundle/calendar-vim"]
+	path = bundle/calendar-vim
+	url = https://github.com/mattn/calendar-vim.git

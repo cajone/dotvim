@@ -169,6 +169,11 @@
        set number!
     endfunction
 
+    function! ReformatDiary()
+      execute '%s/(\d/(.\/\0/'
+      execute '%s/\d)/.md)/'
+    endfunction
+
     " Debug plugins on
     function! DebugOn()
       profile start profile.log
@@ -202,6 +207,7 @@
     set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
     set scrolljump=5                " Lines to scroll when cursor leaves screen
     set scrolloff=3                 " Minimum lines to keep above and below cursor
+    set shell=/usr/bin/zsh          " change the :! shell to use zsh
     set foldenable                  " Auto fold code
 "   set list                        " set nolist hide/show hidden chars eg
 "   set ff=unix or ff=dos           " change the file line endings
@@ -276,8 +282,14 @@
     map <F3> <C-w>t<C-w>K
     map <F4> <C-w>t<C-w>H
 
+    " resize vertical split for calander
+    map <F12> :vertical resize +5<CR>
+
     " toggle relativenumber and numbers
     map <leader>nn  :call Togglelinenumbers()<cr>
+
+    " reformat dairy index
+    map <F2> :call ReformatDiary()<CR> %%
 
     " tab shortcuts
     map <leader>tp  :tabprevious<cr>
