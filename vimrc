@@ -170,8 +170,7 @@
     endfunction
 
     function! ReformatDiary()
-      execute '%s/(\d/(.\/\0/'
-      execute '%s/\d)/.md)/'
+      execute '%s/\((\)\(\d*.*\)\()\)/\1.\/\2.md\3/'
     endfunction
 
     " Debug plugins on
