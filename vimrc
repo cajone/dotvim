@@ -55,7 +55,7 @@
 
 " Plugin Key Mappings {
     " Airline Theme
-        let g:airline_theme='base16'
+        let g:airline_theme='base16_chalk'
         set laststatus=2 					    " Get instant feeback from airline
         let g:airline#extensions#tagbar#enabled = 1
 
@@ -159,6 +159,8 @@
       if has('conceal')
         set conceallevel=2 concealcursor=niv
       endif
+
+      "Plugin calendar
 
 " } // End of key bindings
 
