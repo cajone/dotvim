@@ -171,6 +171,7 @@
        set number!
     endfunction
 
+    " Awesome regex command
     function! ReformatDiary()
       execute '%s/\((\)\(\d*.*\)\()\)/\1.\/\2.md\3/'
     endfunction
