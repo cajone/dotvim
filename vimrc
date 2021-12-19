@@ -140,6 +140,12 @@
          Plug 'roxma/vim-hug-neovim-rpc'
        endif
 
+       " let g:deoplete#enable_at_startup = 1
+
+       
+    " Tell Neosnippet about the other snippets
+      let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+
     " Plugin key-mappings vim snippets.
       " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
       imap <C-k>     <Plug>(neosnippet_expand_or_jump)
