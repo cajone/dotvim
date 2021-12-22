@@ -291,7 +291,9 @@
     map <F4> <C-w>t<C-w>H
 
     " resize vertical split for calander
-    map <F12> :vertical resize +5<CR>
+    map <F10> :vertical resize +5<CR>
+    map <F9> :vertical resize -5<CR>
+
 
     " toggle relativenumber and numbers
     map <leader>nn  :call Togglelinenumbers()<cr>
