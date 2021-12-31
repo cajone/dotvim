@@ -101,3 +101,6 @@
 [submodule "bundle/deoplete.nvim"]
 	path = bundle/deoplete.nvim
 	url = git@github.com:Shougo/deoplete.nvim.git
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = git@github.com:fatih/vim-go.git

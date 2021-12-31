@@ -59,10 +59,6 @@
         set laststatus=2 					    " Get instant feeback from airline
         let g:airline#extensions#tagbar#enabled = 1
 
-    " Tagbar
-        nmap <F8> :TagbarToggle<CR>
-
-    " VimWiki
         
         let g:vimwiki_list = [{'path': '~/vimwiki/',
                               \ 'syntax': 'markdown', 'ext': '.md'}]
@@ -165,6 +161,9 @@
       if has('conceal')
         set conceallevel=2 concealcursor=niv
       endif
+
+      " Vim-go
+      call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
 
       "Plugin calendar
 
@@ -286,20 +285,12 @@
     " Jump list driven with <ctrl-o> ( back ) and <ctrl-i> ( forward )
     " map <leader>j :ju <cr>
 
-    " toggle vsplit / hsplit
-    map <F3> <C-w>t<C-w>K
-    map <F4> <C-w>t<C-w>H
 
-    " resize vertical split for calander
-    map <F10> :vertical resize +5<CR>
-    map <F9> :vertical resize -5<CR>
 
 
     " toggle relativenumber and numbers
     map <leader>nn  :call Togglelinenumbers()<cr>
 
-    " reformat dairy index
-    map <F2> :call ReformatDiary()<CR> %%
 
     " tab shortcuts
     map <leader>tp  :tabprevious<cr>
@@ -311,8 +302,6 @@
     map <leader>dg :diffget
     map <leader>mt :git mergetool --tool diffconflicts
 
-    " add timestamp at end of line
-    nnoremap <F5> A<C-r>=strftime("%c")<CR>
 
     " Saved Macros
     let @d='ysiw"'
@@ -342,3 +331,25 @@
 
     " Deoplete toggle
     map <leader>dt :call deoplete#toggle()<cr>
+
+    " Function Key - Key Bindings
+
+    " reformat dairy index
+    nnoremap <F2> :call ReformatDiary()<CR> %%
+    
+    " toggle vsplit / hsplit
+    nnoremap <F3> <C-w>t<C-w>K
+    nnoremap <F4> <C-w>t<C-w>H
+
+    " add timestamp at end of line
+    nnoremap <F5> A<C-r>=strftime("%c")<CR>
+
+    " VimWiki
+    nnoremap <F6> :vsplit ~/vimwiki/vim/vimwiki.md<CR>
+
+    " Tagbar
+    nnoremap <F8> :TagbarToggle<CR>
+
+    " resize vertical split for calander
+    nnoremap <F9> :vertical resize -5<CR>
+    nnoremap <F10> :vertical resize +5<CR>
