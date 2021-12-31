@@ -287,7 +287,6 @@
 
 
 
-
     " toggle relativenumber and numbers
     map <leader>nn  :call Togglelinenumbers()<cr>
 
@@ -353,3 +352,19 @@
     " resize vertical split for calander
     nnoremap <F9> :vertical resize -5<CR>
     nnoremap <F10> :vertical resize +5<CR>
+
+
+"    function! FollowTag()
+"      if !exists("w:tagbrowse")
+"        vsplit
+"        let w:tagbrowse=1
+"      endif
+"      execute "tag " . expand("<cword>")
+"    endfunction
+"
+"    nnoremap <c-]> :call FollowTag()<CR>
+
+
+    " Add these lines in vimrc
+    map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+    map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
