@@ -59,11 +59,13 @@
         set laststatus=2 					    " Get instant feeback from airline
         let g:airline#extensions#tagbar#enabled = 1
 
-        
+    " VimWiki        
         let g:vimwiki_list = [{'path': '~/vimwiki/',
                               \ 'syntax': 'markdown', 'ext': '.md'}]
 
         let g:vimwiki_auto_chdir = 1
+        let g:vimwiki_conceallevel = 2
+
         augroup vimwiki
           autocmd BufWritePost ~/vimwiki/* !git add "%";git commit -m "Auto commit of %:t." "%"
         augroup END
@@ -124,19 +126,19 @@
         " let g:instant_markdown_port = 8888
         " let g:instant_markdown_python = 1
 
-    " deoplete
-        let g:python3_host_prog = '/usr/bin/python'
-        " set runtimepath+=~/.vim/bundle/deoplete
-        let g:deoplete#enable_at_startup = 0
-       if has('nvim')
-         " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-       else
-         Plug 'Shougo/deoplete.nvim'
-         Plug 'roxma/nvim-yarp'
-         Plug 'roxma/vim-hug-neovim-rpc'
-       endif
-
-       " let g:deoplete#enable_at_startup = 1
+"     " deoplete
+"         let g:python3_host_prog = '/usr/bin/python'
+"         " set runtimepath+=~/.vim/bundle/deoplete
+"         let g:deoplete#enable_at_startup = 0
+"        if has('nvim')
+"          " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"        else
+"          Plug 'Shougo/deoplete.nvim'
+"          Plug 'roxma/nvim-yarp'
+"          Plug 'roxma/vim-hug-neovim-rpc'
+"        endif
+" 
+"        " let g:deoplete#enable_at_startup = 1
 
        
     " Tell Neosnippet about the other snippets
@@ -163,7 +165,7 @@
       endif
 
       " Vim-go
-      call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
+      " call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
 
       "Plugin calendar
 

@@ -1,4 +1,11 @@
-# Repo is based on Drew Neil's Vimcasts episode #27
+### Note : 
+
+This repo is no longer maintained as of the 4th Jan 2022, as all things this has served me well but over the 6 years the repo has become slightly bloated with plugins and some of the plugin functionality has been introduced into core. 
+I still think the .vimrc file is well organised and I will leave it here for historical fact. Now moving on to a new dotnvim repo, where I will go back to basics and only pull in exactly what I need
+
+The repo should still work with vim 8* ( maybe the release of Vim 9 will make me revisit this )
+
+## Repo is based on Drew Neil's Vimcasts episode #27
 
 http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 
