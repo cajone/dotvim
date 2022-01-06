@@ -5,10 +5,12 @@ I still think the .vimrc file is well organised and I will leave it here for his
 
 The repo should still work with vim 8* ( maybe the release of Vim 9 will make me revisit this )
 
+---
 ## Repo is based on Drew Neil's Vimcasts episode #27
 
 http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 
+---
 ##### List of modules in this configuration 
 [modules used in this configuration](modules.md)
 
@@ -62,9 +64,18 @@ Once this is done we need to download all the bundles defined as git submodules:
 git submodule update --init
 ```
 
+To update this repo on your system after this init load do the following :
+
+```vim
+cd ~/.vim
+git pull
+git submodule foreach git pull origin master
+```
+---
 ### Helptags
 last but not least start <b>vim</b> and run <b>:Helptags</b> to load all the help files for the submodules
 
+---
 ### \<leader\>
 This vimrc file uses <b>'\\'</b>  as its leader key, if you wish to change this to something else change this line in the vimrc
 
@@ -72,7 +83,7 @@ This vimrc file uses <b>'\\'</b>  as its leader key, if you wish to change this 
     let mapleader='\'
 ```
 
-
+---
 ### NeoVim (nvim)
 To use this vimrc configuration with nvim :
 
