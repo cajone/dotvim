@@ -66,7 +66,7 @@ git submodule update --init
 
 To update this repo on your system after this init load do the following :
 
-```vim
+```zsh
 cd ~/.vim
 git pull
 git submodule foreach git pull origin master
