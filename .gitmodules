@@ -34,11 +34,11 @@
 	url = https://github.com/ekalinin/Dockerfile.vim.git
 [submodule "bundle/vim-misc"]
 	path = bundle/vim-misc
-	url = http://github.com/xolox/vim-misc
+	url = https://github.com/xolox/vim-misc
   ignore = dirty
 [submodule "bundle/vim-lua"]
 	path = bundle/vim-lua
-	url = http://github.com/xolox/vim-lua-ftplugin
+	url = https://github.com/xolox/vim-lua-ftplugin
   ignore = dirty
 [submodule "bundle/xoria256"]
 	path = bundle/xoria256
@@ -85,4 +85,4 @@
 	url = https://github.com/mattn/calendar-vim.git
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
-	url = git@github.com:fatih/vim-go.git
+	url = https://github.com/fatih/vim-go.git
