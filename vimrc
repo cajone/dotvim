@@ -59,7 +59,7 @@
         set laststatus=2 					    " Get instant feeback from airline
         let g:airline#extensions#tagbar#enabled = 1
 
-    " VimWiki        
+    " VimWiki
         let g:vimwiki_list = [{'path': '~/vimwiki/',
                               \ 'syntax': 'markdown', 'ext': '.md'}]
 
@@ -111,7 +111,7 @@
         let g:gitgutter_sign_removed_first_line = '^'
         let g:gitgutter_sign_modified_removed = '<'
 
-    
+
     " Instant_markdown-preview
         filetype plugin on
         "Uncomment to override defaults:
@@ -137,10 +137,10 @@
 "          Plug 'roxma/nvim-yarp'
 "          Plug 'roxma/vim-hug-neovim-rpc'
 "        endif
-" 
+"
 "        " let g:deoplete#enable_at_startup = 1
 
-       
+
     " Tell Neosnippet about the other snippets
       let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 
@@ -259,7 +259,7 @@
     " if &diff                      " Turn syntax highlighting off in diff mode
     "  syntax off
     " endif
- 
+
 " Run cookstyle using make
 
     set makeprg="cookstyle -a"
@@ -267,7 +267,7 @@
 " Key Mappings
 
     " Ctrl W |   # Expands the current pane to full size
-    " Ctrl W =   # resets the window panes 
+    " Ctrl W =   # resets the window panes
 
     " Some helpers to edit mode
     " http://vimcasts.org/e/14
@@ -327,7 +327,7 @@
     nmap <leader>jp <Plug>(GitGutterPrevHunk)  " git previous
 
     " Instant_markdown_preview on and off
-    map <leader>md :InstantMarkdownPreview<cr>   " Switch on 
+    map <leader>md :InstantMarkdownPreview<cr>   " Switch on
     map <leader>mo :InstantMarkdownStop<cr>      " Switch off
 
     " Deoplete toggle
@@ -337,7 +337,7 @@
 
     " reformat dairy index
     nnoremap <F2> :call ReformatDiary()<CR> %%
-    
+
     " toggle vsplit / hsplit
     nnoremap <F3> <C-w>t<C-w>K
     nnoremap <F4> <C-w>t<C-w>H
