@@ -1,6 +1,6 @@
 let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
 argglobal
-setlocal fdm=expr
+setlocal fdm=syntax
 setlocal fde=Foldexpr_markdown(v:lnum)
 setlocal fmr={{{,}}}
 setlocal fdi=#
@@ -13,8 +13,9 @@ if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
 keepjumps 7
-normal! 04|
+normal! 011|
 lcd ~/vimwiki
 let &g:so = s:so_save | let &g:siso = s:siso_save
+nohlsearch
 doautoall SessionLoadPost
 " vim: set ft=vim :
