@@ -41,6 +41,10 @@ git clone https://github.com/cajone/dotvim.git .
 mkdir undodir  # this gives you persistent undo capabilities across sessions
 ```
 
+```zsh
+mkdir view  # You only need this if you intend to use vims folding capability
+```
+
 If on a linux system run the next line:
 
 
