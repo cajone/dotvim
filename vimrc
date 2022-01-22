@@ -355,6 +355,10 @@
     nnoremap <F9> :vertical resize -5<CR>
     nnoremap <F10> :vertical resize +5<CR>
 
+    " autosave text folding
+    autocmd BufWinLeave *.* mkview
+    autocmd BufWinEnter *.* silent loadview
+
 
 "    function! FollowTag()
 "      if !exists("w:tagbrowse")
