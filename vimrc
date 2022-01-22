@@ -83,6 +83,11 @@
         autocmd BufEnter *.txt  set spell | set dictionary+=/usr/share/dict/cracklib-small | set complete+=k
         autocmd BufLeave *.txt  set nospell
 
+    " Autosave text folding
+        autocmd BufLeave *.* mkview
+        autocmd BufEnter *.* silent loadview
+
+
     " Ctrlp
         let g:ctrlp_map = '<c-p>'
         let g:ctrlp_cmd = 'CtrlP'
@@ -354,10 +359,6 @@
     " resize vertical split for calander
     nnoremap <F9> :vertical resize -5<CR>
     nnoremap <F10> :vertical resize +5<CR>
-
-    " autosave text folding
-    autocmd BufWinLeave *.* mkview
-    autocmd BufWinEnter *.* silent loadview
 
 
 "    function! FollowTag()
