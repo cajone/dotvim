@@ -84,8 +84,8 @@
         autocmd BufLeave *.txt  set nospell
 
     " Autosave text folding
-        autocmd BufLeave *.* mkview
-        autocmd BufEnter *.* silent loadview
+        autocmd BufWinLeave *.* mkview
+        autocmd BufWinEnter *.* silent loadview
 
 
     " Ctrlp

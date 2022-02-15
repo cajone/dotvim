@@ -1,1 +1,0 @@
-/home/pete/.vim/vimrc
