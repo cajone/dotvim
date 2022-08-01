@@ -352,6 +352,8 @@
 
     " VimWiki
     nnoremap <F6> :vsplit ~/vimwiki/vim/vimwiki.md<CR>
+    " Unfold URL's in vimwiki
+    nnoremap <leader>nc :set conceallevel=0<CR>
 
     " Tagbar
     nnoremap <F8> :TagbarToggle<CR>
