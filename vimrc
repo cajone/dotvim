@@ -12,10 +12,10 @@
     " }
     " Basics {
       " Assume a .vimrc file exists so no need for
-      " set nocompatible        " Must be first line ( turns off Vi compatibility )
-          if !WINDOWS()
-              set shell=/bin/bash
-          endif
+        set nocompatible        " Must be first line ( turns off Vi compatibility )
+        if !WINDOWS()
+            set shell=/bin/bash
+        endif
     " }
 
     " Windows Compatible {
