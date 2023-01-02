@@ -324,7 +324,9 @@
     autocmd BufWritePre *.xml %s/\s\+$//e
 
     " Format json files with tabbing = 2
-    map <leader>fj :%!/bin/env python -m json.tool --indent=2<cr>
+    map <leader>fj :%!jq -S .<cr>
+    " :%!/bin/env python -m json.tool --indent=2<cr>
+    " Format xml files
     map <leader>fx :%!xmllint --encode UTF-8 --format %<cr>
 
     " gitgutter block jump mappings
