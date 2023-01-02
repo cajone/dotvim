@@ -57,6 +57,7 @@ if on a windows system move the .vim/vimrc file to ~/.vimrc
 Once this is done we need to download all the bundles defined as git submodules:
 
 ```zsh
+cd ~/.vim
 git submodule update --init
 ```
 
