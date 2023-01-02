@@ -323,7 +323,8 @@
     " Remove trailing white space from xml files
     autocmd BufWritePre *.xml %s/\s\+$//e
 
-    " Format json files with tabbing = 2
+    " Format and sort keys in json files with tabbing = 2 : Note requires that jq is installed
+    " on your system
     map <leader>fj :%!jq -S .<cr>
     " :%!/bin/env python -m json.tool --indent=2<cr>
     " Format xml files
