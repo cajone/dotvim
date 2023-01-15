@@ -341,8 +341,6 @@
     " Deoplete toggle
     map <leader>dt :call deoplete#toggle()<cr>
 
-    " Unfold URL's in vimwiki
-    nnoremap <leader>nc :set conceallevel=0<CR>
 
     " Function Key - Key Bindings
 
@@ -361,6 +359,9 @@
     " nnoremap <F6> z=<CR>  " Offer a dictionary of words to select from
     nnoremap <F6> [s<CR>  " Goes to the previous spelling wordy
     " nnoremap <F8> zg<CR>  " Adds the word under the cursor to the Dictionary
+
+    " Unfold URL's in vimwiki
+    nnoremap <F8> :set conceallevel=0<CR>
 
     " VimWiki
     nnoremap <F9> :vsplit ~/vimwiki/vim/vimwiki.md<CR>
