@@ -314,7 +314,7 @@
     let @s="ysiw'"
 
     " turn off highlighted search
-    map <leader>z  :nohlsearch<cr>
+    map <leader>a  :nohlsearch<cr>
 
     " turn on debug mode
     map <leader>DO :call DebugOn()<cr>
@@ -341,6 +341,9 @@
     " Deoplete toggle
     map <leader>dt :call deoplete#toggle()<cr>
 
+    " Unfold URL's in vimwiki
+    nnoremap <leader>nc :set conceallevel=0<CR>
+
     " Function Key - Key Bindings
 
     " reformat dairy index
@@ -351,19 +354,23 @@
     nnoremap <F4> <C-w>t<C-w>H
 
     " add timestamp at end of line
-    nnoremap <F5> A<C-r>=strftime("%c")<CR>
+    " nnoremap <F5> A<C-r>=strftime("%c")<CR>
+
+    " Spelling 
+    nnoremap <F5> ]s<CR>  " Goes to the next spelling word
+    " nnoremap <F6> z=<CR>  " Offer a dictionary of words to select from
+    nnoremap <F6> [s<CR>  " Goes to the previous spelling wordy
+    " nnoremap <F8> zg<CR>  " Adds the word under the cursor to the Dictionary
 
     " VimWiki
-    nnoremap <F6> :vsplit ~/vimwiki/vim/vimwiki.md<CR>
-    " Unfold URL's in vimwiki
-    nnoremap <leader>nc :set conceallevel=0<CR>
-
+    nnoremap <F9> :vsplit ~/vimwiki/vim/vimwiki.md<CR>
+    
     " Tagbar
-    nnoremap <F8> :TagbarToggle<CR>
+    " nnoremap <F10> :TagbarToggle<CR>
 
     " resize vertical split for calander
-    nnoremap <F9> :vertical resize -5<CR>
-    nnoremap <F10> :vertical resize +5<CR>
+    nnoremap <F11> :vertical resize -5<CR>
+    nnoremap <F12> :vertical resize +5<CR>
 
 
 "    function! FollowTag()
@@ -380,3 +387,4 @@
     " Add these lines in vimrc
     map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
     map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+    
