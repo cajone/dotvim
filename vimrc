@@ -351,8 +351,6 @@
     nnoremap <F3> <C-w>t<C-w>K
     nnoremap <F4> <C-w>t<C-w>H
 
-    " add timestamp at end of line
-    " nnoremap <F5> A<C-r>=strftime("%c")<CR>
 
     " Spelling 
     nnoremap <F5> ]s<CR>  " Goes to the next spelling word
@@ -368,6 +366,9 @@
     
     " Tagbar
     " nnoremap <F10> :TagbarToggle<CR>
+
+    " add timestamp at end of line
+    nnoremap <F10> A<C-r>=strftime(" %d-%m-%Y")<CR>
 
     " resize vertical split for calander
     nnoremap <F11> :vertical resize -5<CR>
