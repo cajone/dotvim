@@ -6,9 +6,12 @@ http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-patho
 ##### List of modules in this configuration 
 [modules used in this configuration](modules.md)
 
-* Note: neocomplete has been depricated in vim 8+.  I have switched this out for deoplete.
+* Note: neocomplete has been deprecated in vim 8+.  I have switched this out for deoplete.
 
-* Note: the following commands maybe distructive to your existing vim setup make sure you move your
+
+### Setup Instructions
+
+* Note: the following commands maybe destructive to your existing vim setup make sure you move your
 ~/.vim and ~/.vimrc out of the way eg:
 
 ```zsh
@@ -41,10 +44,6 @@ git clone https://github.com/cajone/dotvim.git .
 mkdir undodir  # this gives you persistent undo capabilities across sessions
 ```
 
-```zsh
-mkdir view  # You only need this if you intend to use vims folding capability
-```
-
 If on a linux system run the next line:
 
 
@@ -60,6 +59,15 @@ Once this is done we need to download all the bundles defined as git submodules:
 cd ~/.vim
 git submodule update --init
 ```
+
+**END OF SETUP INSTRUCTIONS**
+
+
+##### Don't do this if you have no intention of using vim folding as it will confuse you
+```zsh
+mkdir view  # You only need this if you intend to use vims folding capability
+```
+#### To maintain your system and keep it up to date run the following command on a regular basis
 
 To update this repo on your system after this init load do the following :
 
