@@ -59,45 +59,6 @@
         set laststatus=2 					    " Get instant feeback from airline
         let g:airline#extensions#tagbar#enabled = 1
 
-    " VimWiki
-        let g:vimwiki_list = [{'path': '~/vimwiki/',
-                              \ 'syntax': 'markdown', 'ext': '.md'}]
-
-        let g:vimwiki_auto_chdir = 1
-        let g:vimwiki_conceallevel = 2
-
-        augroup vimwiki
-          autocmd BufWritePost ~/vimwiki/* !git add "%";git commit -m "Auto commit of %:t." "%"
-        augroup END
-
-    " Vim-Chef
-        autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
-
-    " Vim-Inspec
-        autocmd FileType ruby set filetype=ruby.inspec
-        au BufRead,BufNewFile *_test.rb set syntax=ruby.inspec
-
-    "Spelling
-        autocmd BufEnter *.md set spell | set dictionary+=/usr/share/dict/cracklib-small | set complete+=k
-        autocmd BufLeave *.md set nospell
-        autocmd BufEnter *.txt  set spell | set dictionary+=/usr/share/dict/cracklib-small | set complete+=k
-        autocmd BufLeave *.txt  set nospell
-
-    " Autosave text folding
-        autocmd BufWinLeave *.* mkview
-        autocmd BufWinEnter *.* silent loadview
-
-
-    " Ctrlp
-        let g:ctrlp_map = '<c-p>'
-        let g:ctrlp_cmd = 'CtrlP'
-        let g:ctrlp_show_hidden = 1             " Show dotfiles
-
-    " Solarized
-        set t_Co=256
-        let g:solarized_termcolors=256
-        "let g:solarized_termcolors=256
-
     " Arduino
         let g:arduino_cmd = '/usr/bin/arduino'                      "Runtime Path
         let g:arduino_dir = '/usr/share/arduino'                    "Arduino home dir
@@ -108,28 +69,14 @@
         nnoremap <buffer> <leader>ab :ArduinoChooseBoard<CR>
         nnoremap <buffer> <leader>ap :ArduinoChooseProgrammer<CR>
 
-    " Gitgutter
-      " Use fontawesome icons as signs
-        let g:gitgutter_sign_added = '+'
-        let g:gitgutter_sign_modified = '>'
-        let g:gitgutter_sign_removed = '-'
-        let g:gitgutter_sign_removed_first_line = '^'
-        let g:gitgutter_sign_modified_removed = '<'
+    " Autosave text folding
+        autocmd BufWinLeave *.* mkview
+        autocmd BufWinEnter *.* silent loadview
 
-
-    " Instant_markdown-preview
-        filetype plugin on
-        "Uncomment to override defaults:
-        let g:instant_markdown_slow = 1
-        let g:instant_markdown_autostart = 0
-        " let g:instant_markdown_open_to_the_world = 1
-        " let g:instant_markdown_allow_unsafe_content = 1
-        " let g:instant_markdown_allow_external_content = 0
-        " let g:instant_markdown_mathjax = 1
-        let g:instant_markdown_logfile = '/tmp/instant_markdown.log'
-        " let g:instant_markdown_autoscroll = 0
-        " let g:instant_markdown_port = 8888
-        " let g:instant_markdown_python = 1
+    " Ctrlp
+        let g:ctrlp_map = '<c-p>'
+        let g:ctrlp_cmd = 'CtrlP'
+        let g:ctrlp_show_hidden = 1             " Show dotfiles
 
 "     " deoplete
 "         let g:python3_host_prog = '/usr/bin/python'
@@ -146,10 +93,50 @@
 "        " let g:deoplete#enable_at_startup = 1
 
 
-    " Tell Neosnippet about the other snippets
-      let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+    " Gitgutter
+      " Use fontawesome icons as signs
+        let g:gitgutter_sign_added = '+'
+        let g:gitgutter_sign_modified = '>'
+        let g:gitgutter_sign_removed = '-'
+        let g:gitgutter_sign_removed_first_line = '^'
+        let g:gitgutter_sign_modified_removed = '<'
 
-    " Plugin key-mappings vim snippets.
+    " Instant_markdown-preview
+        filetype plugin on
+        "Uncomment to override defaults:
+        let g:instant_markdown_slow = 1
+        let g:instant_markdown_autostart = 0
+        " let g:instant_markdown_open_to_the_world = 1
+        " let g:instant_markdown_allow_unsafe_content = 1
+        " let g:instant_markdown_allow_external_content = 0
+        " let g:instant_markdown_mathjax = 1
+        let g:instant_markdown_logfile = '/tmp/instant_markdown.log'
+        " let g:instant_markdown_autoscroll = 0
+        " let g:instant_markdown_port = 8888
+        " let g:instant_markdown_python = 1
+
+
+    " Solarized
+        set t_Co=256
+        let g:solarized_termcolors=256
+        "let g:solarized_termcolors=256
+
+
+    "Spelling
+        autocmd BufEnter *.md set spell | set dictionary+=/usr/share/dict/cracklib-small | set complete+=k
+        autocmd BufLeave *.md set nospell
+        autocmd BufEnter *.txt  set spell | set dictionary+=/usr/share/dict/cracklib-small | set complete+=k
+        autocmd BufLeave *.txt  set nospell
+
+    " Vim-Chef
+        autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
+
+    " Vim-Inspec
+        autocmd FileType ruby set filetype=ruby.inspec
+        au BufRead,BufNewFile *_test.rb set syntax=ruby.inspec
+
+
+    " Vim-snippets.
       " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
       imap <C-k>     <Plug>(neosnippet_expand_or_jump)
       smap <C-k>     <Plug>(neosnippet_expand_or_jump)
@@ -168,6 +155,24 @@
       if has('conceal')
         set conceallevel=2 concealcursor=niv
       endif
+
+
+    " VimWiki
+        let g:vimwiki_list = [{'path': '~/vimwiki/',
+                              \ 'syntax': 'markdown', 'ext': '.md'}]
+
+        let g:vimwiki_auto_chdir = 1
+        let g:vimwiki_conceallevel = 2
+
+        augroup vimwiki
+          autocmd BufWritePost ~/vimwiki/* !git add "%";git commit -m "Auto commit of %:t." "%"
+        augroup END
+
+
+
+
+    " Tell Neosnippet about the other snippets
+      let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 
       " Vim-go
       " call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
