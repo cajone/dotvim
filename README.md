@@ -62,12 +62,16 @@ git submodule update --init
 
 **END OF SETUP INSTRUCTIONS**
 
+---
 
-##### Don't do this if you have no intention of using vim folding as it will confuse you
+
+##### Folding : Don't do this if you have no intention of using vim folding as it will confuse you
 ```zsh
 mkdir view  # You only need this if you intend to use vims folding capability
 ```
-#### To maintain your system and keep it up to date run the following command on a regular basis
+
+
+#### Regular Maintenance : To maintain your system and keep it up to date run the following command on a regular basis
 
 To update this repo on your system after this init load do the following :
 
