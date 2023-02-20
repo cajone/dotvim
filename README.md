@@ -66,14 +66,17 @@ git submodule update --init
 
 
 ##### Folding : Don't do this if you have no intention of using vim folding as it will confuse you
+
 ```zsh
 mkdir view  # You only need this if you intend to use vims folding capability
 ```
 
+---
 
-#### Regular Maintenance : To maintain your system and keep it up to date run the following command on a regular basis
+### Regular Maintenance : 
 
-To update this repo on your system after this init load do the following :
+
+To update this repo on your system after the original init load do the following :
 
 ```zsh
 cd ~/.vim
@@ -81,10 +84,12 @@ git pull
 git submodule foreach git pull origin master
 ```
 ---
+
 ### Helptags
 last but not least start <b>vim</b> and run <b>:Helptags</b> to load all the help files for the submodules
 
 ---
+
 ### \<leader\>
 This vimrc file uses <b>'\\'</b>  as its leader key, if you wish to change this to something else change this line in the vimrc
 
@@ -93,6 +98,7 @@ This vimrc file uses <b>'\\'</b>  as its leader key, if you wish to change this 
 ```
 
 ---
+
 ### NeoVim (nvim)
 To use this vimrc configuration with nvim :
 
