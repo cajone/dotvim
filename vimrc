@@ -268,6 +268,15 @@
       " read the output log profile.log for clues
     endfunction
 
+    " Toggle vimwiki conceal level useful for when you have to edit URL links
+    function! ToggleVimwikiConceallevel()
+      if &conceallevel == 0
+        let &conceallevel = 2
+      else
+        let &conceallevel = 0
+      endif
+    endfunction
+
 " } // End of users Functions
 
     set undofile                    " Maintain undo history between sessions
@@ -424,7 +433,7 @@
     " nnoremap <F8> zg<CR>  " Adds the word under the cursor to the Dictionary
 
     " Unfold URL's in vimwiki
-    nnoremap <F8> :set conceallevel=0<CR>
+    nnoremap <F8> :call ToggleVimwikiConceallevel()<cr>
 
     " VimWiki
     nnoremap <F9> :vsplit ~/vimwiki/vim/vimwiki.md<CR>
