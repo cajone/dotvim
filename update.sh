@@ -11,7 +11,8 @@ fi
 
 cd ~/.vim
 git pull
+git submodule foreach git pull origin master
 git add .
-git commit -m "$1"
+git commit -m "Submodule update"
 git push
 cd -

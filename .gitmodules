@@ -86,6 +86,3 @@
 [submodule "bundle/rhubarb"]
 	path = bundle/rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
-[submodule "bundle/fzf"]
-	path = bundle/fzf
-	url = https://github.com/junegunn/fzf.vim.git
