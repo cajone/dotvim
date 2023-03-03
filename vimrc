@@ -233,8 +233,8 @@
 "   set ff=unix or ff=dos           " change the file line endings
     if v:version > 703
         set relativenumber          " Sets the linenumbers to be relative to the current line
-        colorscheme jellybeans
-        "colorscheme xoria256
+        "colorscheme jellybeans
+        colorscheme xoria256
         "colorscheme molokai
     else
         colorscheme xoria256
@@ -253,7 +253,7 @@
 
     set nospell                     " Turn Spell checking off
     set background=dark             " light on dark
-    highlight LineNr ctermfg=green  " Change line number color to green
+    highlight LineNr ctermfg=blue " Change line number color to green
 
 " Formatting {
 
