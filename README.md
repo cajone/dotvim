@@ -48,7 +48,7 @@ If on a linux system run the next line:
 
 
 ```zsh
-  ln -s ~/.vim/vimrc ~./vimrc
+  ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
 if on a windows system move the .vim/vimrc file to ~/.vimrc
