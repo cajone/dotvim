@@ -58,7 +58,9 @@
         let g:airline_theme='base16_chalk'
         set laststatus=2 					    " Get instant feeback from airline
         let g:airline#extensions#tagbar#enabled = 1
-
+        " set statusline=%!:FugitiveStatusLine()
+        set statusline=%<%f\ %h%m%r%{FugitiveStatusline()}%=%-14.(%l,%c%V%)\ %P
+              
     " Arduino
         let g:arduino_cmd = '/usr/bin/arduino'                      "Runtime Path
         let g:arduino_dir = '/usr/share/arduino'                    "Arduino home dir
