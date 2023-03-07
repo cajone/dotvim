@@ -58,7 +58,7 @@
         let g:airline_theme='base16_chalk'
         set laststatus=2 					    " Get instant feeback from airline
         let g:airline#extensions#tagbar#enabled = 1
-        set statusline=%<%f\ %h%m%r%{FugitiveStatusline()}%=%-14.(%l,%c%V%)\ %P
+        set statusline+=%<%f\ %h%m%r%{FugitiveStatusline()}%=%-14.(%l,%c%V%)\ %P
               
     " Arduino
     " source ~/.vim/source_files/arduino.vim
