@@ -309,10 +309,6 @@
     map <leader>mt :git mergetool --tool diffconflicts
 
 
-    " Saved Macros
-    let @d='ysiw"'
-    let @s="ysiw'"
-
     " turn off highlighted search
     map <leader>a  :nohlsearch<cr>
 
@@ -388,6 +384,12 @@
 "
 "    nnoremap <c-]> :call FollowTag()<CR>
 
+
+" Odds & Ends I'm not sure if I will keep 
+
+    " Saved Macros
+    let @d='ysiw"'
+    let @s="ysiw'"
 
     " Add these lines in vimrc
     map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
