@@ -86,3 +86,6 @@
 [submodule "bundle/rhubarb"]
 	path = bundle/rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
