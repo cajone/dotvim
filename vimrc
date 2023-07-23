@@ -144,6 +144,11 @@
         set conceallevel=2 concealcursor=niv
       endif
 
+    " Ale
+      " let g:ale_linters = ['rubocop', 'brakeman']
+      let g:ale_ruby_rubocop_executable = 'brakeman'
+      let g:ale_ruby_rubocop_autocorrect = 1
+
 
     " VimWiki
         let g:vimwiki_list = [{'path': '~/vimwiki/',
@@ -336,7 +341,6 @@
 
     " Deoplete toggle
     map <leader>dt :call deoplete#toggle()<cr>
-
 
     " Function Key - Key Bindings
 
