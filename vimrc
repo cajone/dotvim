@@ -81,6 +81,10 @@
 "
 "        " let g:deoplete#enable_at_startup = 1
 
+    " VimFiler
+        let g:vimfiler_as_default_explorer = 1
+        let g:vimfiler_show_hidden = 1
+
     " Gitgutter
       " Use fontawesome icons as signs
         let g:gitgutter_sign_added = '+'
