@@ -1,3 +1,6 @@
+" Comment to test PRs
+"
+"
 " Environment {
     " Identify platform {
         silent function! OSX()
